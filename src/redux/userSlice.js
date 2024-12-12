@@ -20,4 +20,6 @@ export const userSlice = createSlice({
       state.email = action.payload;
     }
   }
-})
+});
+
+export const { addUser, changeEmail } = userSlice.actions;
