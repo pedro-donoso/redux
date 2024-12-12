@@ -11,11 +11,14 @@ export const Email = () => {
   };
 
     return (
-    <input 
+    <div>
+      <p>Cambia tu email: </p>
+      <input 
       type="email" 
       value={email} 
       placeholder="Email" 
       onChange={handleChange}
       />
+    </div>
   );
 };
