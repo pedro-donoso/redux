@@ -1,3 +1,5 @@
+![hola](https://github.com/user-attachments/assets/a825ae84-5dca-4f4c-88ec-deeebdd761d3)
+
 ### 1. Creo proyecto y elijo framework: React y Variant: JavaScript
 
 ```
