@@ -1,9 +1,9 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { addUser } from "./redux/userSlice";
 import { Header } from "./components/Header";
 import { Email } from "./components/Email";
-import { addUser } from "./redux/userSlice";
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
-import './App.css';
+import "./App.css";
 
 function App() {
   const dispatch = useDispatch();
@@ -12,6 +12,8 @@ function App() {
     fetch("https://jsonplaceholder.typicode.com/users/1")
       .then((response) => response.json())
       .then((data) => dispatch(addUser(data)))
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <div className='App'>
