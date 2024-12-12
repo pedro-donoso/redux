@@ -1,3 +1,5 @@
+import { Header } from "./components/Header";
+import { Email } from "./components/Email";
 import './App.css'
 
 function App() {
